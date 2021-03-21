@@ -1,0 +1,152 @@
+:root {
+  --bg-black: rgb(27, 27, 27);
+  --bodyBlack: #121212;
+  --fontWhite: #f5f5f5;
+  --fontRed: rgb(211, 19, 67);
+  --mainRed: #cb4545;
+  --font1: "Montserrat", sans-serif;
+  --fontLogo: "Lora", serif;
+}
+body {
+  /* color: var(--fontWhite); */
+  /* overflow: hidden; */
+  font-family: var(--font1);
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: var(--fontWhite);
+}
+
+.navCont {
+  background: var(--bodyBlack);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  color: var(--fontWhite);
+}
+
+.logoText {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.logoTextHigh {
+  background: rgb(196, 8, 40);
+  border: 1px solid rgba(99, 99, 99, 0.164);
+  border-radius: 0 20px 0 20px;
+}
+.navDocs {
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--fontWhite);
+}
+.navVersion {
+  font-size: 0.8rem;
+  font-family: var(--font1);
+  font-weight: 100;
+}
+
+.mainCont {
+  display: flex;
+}
+.sidebarCont {
+  position: sticky;
+  top: 0;
+  background: var(--bg-black);
+  flex: 40%;
+  height: 100vh;
+  z-index: 4;
+  padding: 20px;
+}
+.sidebarListItem {
+  display: block;
+  font-size: 0.9rem;
+  padding: 4px 8px 4px 8px;
+  /* background: purple; */
+  margin-top: 1rem;
+}
+.sidebarListItem:hover {
+  border-radius: 20px;
+  background: var(--mainRed);
+  transition: 0.3s;
+}
+.selected {
+  background: #383535;
+  border-radius: 20px;
+}
+.contentCont {
+  /* color: white; */
+  flex: 60%;
+  padding: 20px;
+}
+.navItems {
+  display: none;
+}
+.burgerIcon {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.hideSidebar {
+  display: none;
+}
+.overlay {
+  background: rgba(54, 54, 54, 0.87);
+  z-index: 5;
+}
+.hideOverflow {
+  overflow: hidden;
+}
+.exampleCont {
+  border: 1px solid rgba(220, 221, 220, 0.705);
+  margin-top: 3rem;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
+  -moz-box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
+  box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
+}
+.code {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 10px;
+  background: #151515;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.78);
+  -moz-box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.78);
+  box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.78);
+}
+.codeFrame {
+  display: block;
+  background: #000;
+  width: 100%;
+  /* height: 250px; */
+  border: none;
+}
+
+/* CARBON IO CALSSES */
+.container.jsx-1281910128 {
+  padding: 0px !important;
+}
+
+@media only screen and (min-width: 668px) {
+  .navItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .burgerIcon {
+    display: none;
+  }
+  .hideSidebar {
+    display: block;
+  }
+  .sidebarCont {
+    flex: 22%;
+  }
+  .contentCont {
+    flex: 78%;
+  }
+}

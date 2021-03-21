@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metaphor UI Docs</title>
+    <link rel="stylesheet" href="./docs.css" />
+    <link rel="stylesheet" href="./MetaphorUI.css" />
+  </head>
+  <body>
+    <!-- TOP NAV BAR -->
+
+    <nav class="navCont">
+      <div class="logCont">
+        <a href="../index.html" class="logoLink"
+          ><h1 class="logoText">
+            Meta<span class="logoTextHigh">phor</span>
+          </h1></a
+        >
+      </div>
+      <div class="navItems">
+        <a href="./docs.html" class="navDocs">Docs</a>
+        <h3 class="navVersion">Ver. 0.0.1</h3>
+      </div>
+      <div class="burgerIcon" onclick="toggleSidebar()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="mainCont">
+      <!-- SIDEBAR CONTAINER -->
+
+      <div class="sidebarCont hideSidebar">
+        <div class="sidebarList">
+          <a class="sidebarListItem selected" href="docs.html"
+            >Getting Started</a
+          >
+          <hr class="hr-dark mt8" />
+          <a class="sidebarListItem" href="./Text.html">Text</a>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT CONTAINER -->
+
+      <div class="contentCont">
+        <h1 class="heading-l">Getting Started</h1>
+        <p class="para-m mt4">Getting up and running with Metaphor UI</p>
+        <hr class="hr-light mt8" />
+        <h4 class="heading-s mt10">CDN:</h4>
+        <p class="para-s mt4">
+          Just copy and paste this CDN link in your project
+        </p>
+
+        <h4 class="heading-s mt10">Download:</h4>
+        <p class="para-s mt4">
+          To use Metaphor UI locally, you'll have to download it using github
+        </p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

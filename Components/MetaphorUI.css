@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+:root {
+  --fontBlack: rgb(24, 24, 24);
+  --font1: "Montserrat", sans-serif;
+  --font2: "Open Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ***************** TEXT STYLES ******************** */
+
+.heading-l {
+  font-family: var(--font2);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--fontBlack);
+}
+.heading-m {
+  font-family: var(--font2);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--fontBlack);
+}
+.heading-s {
+  font-family: var(--font2);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--fontBlack);
+}
+.para-l {
+  color: var(--fontBlack);
+  font-size: 1.2rem;
+}
+.para-m {
+  color: var(--fontBlack);
+  font-size: 1rem;
+}
+.para-s {
+  color: var(--fontBlack);
+  font-size: 0.8rem;
+}
+
+/* ***************** SPACING STYLES ******************** */
+
+/* **MARGIN TOP ****************** */
+
+.mt4 {
+  margin-top: 0.4rem;
+}
+.mt8 {
+  margin-top: 0.8rem;
+}
+.mt10 {
+  margin-top: 1rem;
+}
+.mt15 {
+  margin-top: 1.5rem;
+}
+
+/* **MARGIN LEFT ******************** */
+
+.ml4 {
+  margin-left: 0.4rem;
+}
+.ml8 {
+  margin-left: 0.8rem;
+}
+.ml10 {
+  margin-left: 1rem;
+}
+.ml15 {
+  margin-left: 1.5rem;
+}
+
+/* **MARGIN RIGHT ****************** */
+
+.mr4 {
+  margin-right: 0.4rem;
+}
+.mr8 {
+  margin-right: 0.8rem;
+}
+.mr10 {
+  margin-right: 1rem;
+}
+.mr15 {
+  margin-right: 1.5rem;
+}
+
+/* **MARGIN BOTTOM **************** */
+
+.mb4 {
+  margin-bottom: 0.4rem;
+}
+.mb8 {
+  margin-bottom: 0.8rem;
+}
+.mb10 {
+  margin-bottom: 1rem;
+}
+.mb15 {
+  margin-bottom: 1.5rem;
+}
+
+/* **PADDING TOP ****************** */
+
+.pt4 {
+  padding-top: 0.4rem;
+}
+.pt8 {
+  padding-top: 0.8rem;
+}
+.pt10 {
+  padding-top: 1rem;
+}
+.pt15 {
+  padding-top: 1.5rem;
+}
+
+/* **PADDING LEFT ******************** */
+
+.pl4 {
+  padding-left: 0.4rem;
+}
+.pl8 {
+  padding-left: 0.8rem;
+}
+.pl10 {
+  padding-left: 1rem;
+}
+.pl15 {
+  padding-left: 1.5rem;
+}
+
+/* **PADDING RIGHT ****************** */
+
+.pr4 {
+  padding-right: 0.4rem;
+}
+.pr8 {
+  padding-right: 0.8rem;
+}
+.pr10 {
+  padding-right: 1rem;
+}
+.pr15 {
+  padding-right: 1.5rem;
+}
+
+/* **PADDING BOTTOM **************** */
+
+.pb4 {
+  padding-bottom: 0.4rem;
+}
+.pb8 {
+  padding-bottom: 0.8rem;
+}
+.pb10 {
+  padding-bottom: 1rem;
+}
+.pb15 {
+  padding-bottom: 1.5rem;
+}
+
+/* ************ SEPRATOR COMPONENT ********************** */
+
+.hr-dark {
+  border: 0;
+  height: 1px;
+  background: rgba(71, 71, 71, 0.432);
+  /* margin-top: 1rem; */
+}
+.hr-light {
+  border: 0;
+  height: 1px;
+  background: rgba(196, 192, 192, 0.432);
+}
+.hr-gradient {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(221, 221, 221, 0),
+    rgba(221, 221, 221, 0.75),
+    rgba(221, 221, 221, 0)
+  );
+}
