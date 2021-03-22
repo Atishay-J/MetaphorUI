@@ -79,6 +79,7 @@ a {
   /* color: white; */
   flex: 60%;
   padding: 20px;
+  padding-left: 2.8rem;
 }
 .navItems {
   display: none;
@@ -148,5 +149,10 @@ a {
   }
   .contentCont {
     flex: 78%;
+  }
+  .exampleCont {
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
   }
 }
