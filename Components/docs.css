@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
 :root {
   --bg-black: rgb(27, 27, 27);
   --bodyBlack: #121212;
@@ -7,6 +10,7 @@
   --fontGray: #afafaa;
   --mainRed: #cb4545;
   --font1: "Montserrat", sans-serif;
+  --font2: "Open Sans", sans-serif;
   --fontLogo: "Lora", serif;
 }
 body {
@@ -104,8 +108,7 @@ a {
 .exampleCont {
   border: 1px solid rgba(220, 221, 220, 0.705);
   margin-top: 3rem;
-  padding-left: 2rem;
-  padding-top: 2rem;
+  padding: 2rem;
   /* text-align: center; */
   border-radius: 20px;
   -webkit-box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
@@ -113,15 +116,22 @@ a {
   box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
 }
 .exampleText {
-  font-size: 0.8rem;
-  font-family: var(--font1);
-  font-weight: 100;
+  font-size: 0.9rem;
+  font-family: var(--font2);
+  font-weight: 500;
   color: var(--fontGray);
 }
 .flexCont {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
+}
+.showCodeToggle {
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: var(--font2);
+  font-weight: 600;
+  margin-top: 2.2rem;
 }
 .code {
   width: 80%;
@@ -143,10 +153,9 @@ a {
   border: none;
 }
 
-/* CARBON IO CALSSES
-.container.jsx-1281910128 {
-  padding: 0px !important;
-} */
+.hideCode {
+  display: none;
+}
 
 @media only screen and (min-width: 668px) {
   .navItems {
