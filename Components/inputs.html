@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metaphor UI | Inputs</title>
+    <link rel="stylesheet" href="./docs.css" />
+    <link rel="stylesheet" href="./MetaphorUI.css" />
+  </head>
+  <body>
+    <!-- TOP NAV BAR -->
+
+    <nav class="navCont">
+      <div class="logCont">
+        <a href="../index.html" class="logoLink"
+          ><h1 class="logoText">
+            Meta<span class="logoTextHigh">phor</span>
+          </h1></a
+        >
+      </div>
+      <div class="navItems">
+        <a href="./docs.html" class="navDocs">Docs</a>
+        <h3 class="navVersion">Ver. 0.0.1</h3>
+      </div>
+      <div class="burgerIcon" onclick="toggleSidebar()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="mainCont">
+      <!-- SIDEBAR CONTAINER -->
+
+      <div class="sidebarCont hideSidebar">
+        <div class="sidebarList">
+          <a class="sidebarListItem" href="docs.html">Getting Started</a>
+          <hr class="hr-dark mt8" />
+          <a class="sidebarListItem" href="./Typography.html">Typography</a>
+          <a class="sidebarListItem" href="./Buttons.html">Buttons</a>
+          <a class="sidebarListItem" href="./Cards.html">Cards</a>
+          <a class="sidebarListItem" href="./Images.html">Images</a>
+          <a class="sidebarListItem selected" href="./inputs.html">Inputs</a>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT CONTAINER -->
+
+      <div class="contentCont">
+        <h1 class="heading-l">Inputs</h1>
+        <p class="para-m mt4">Different types of User Inputs</p>
+        <hr class="hr-light mt8" />
+
+        <h4 class="heading-s mt10">Examples:</h4>
+
+        <!-- ** Text Input ** -->
+
+        <div class="exampleCont">
+          <h3 class="exampleText">Text Input</h3>
+          <div class="flexCont flex-column">
+            <!--Simple Text Input-->
+
+            <div class="input-cont">
+              <input
+                type="text"
+                name="fullname"
+                class="simpleText-input"
+                placeholder="Full name"
+              />
+            </div>
+
+            <!--Pill Input-->
+
+            <div class="input-cont">
+              <label for="fullname" class="textInput-label">Name</label>
+              <input
+                type="text"
+                name="fullname"
+                class="text-input"
+                placeholder="Full name"
+              />
+            </div>
+            <!-- BOXED INPUT -->
+            <div class="input-cont boxed-input-cont">
+              <label for="fullname" class="textInput-label">Name</label>
+              <input
+                type="text"
+                name="fullname"
+                class="text-input boxed-input"
+                placeholder="Full name"
+              />
+            </div>
+          </div>
+
+          <h3 class="showCodeToggle" onclick="showCodeToggle()"></h3>
+
+          <div class="code hideCode">
+            <iframe
+              src="https://carbon.now.sh/embed/wdAmoi4EniYjT8jfk2S5"
+              style="
+                width: 100%;
+                height: 682px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!--  ** OTHER INPUTS ** -->
+
+        <div class="exampleCont">
+          <h3 class="exampleText">Other Inputs</h3>
+          <div class="flexCont flex-column">
+            <!--CheckBox-->
+
+            <div class="checkbox-cont">
+              <input
+                type="checkbox"
+                name="fullname"
+                class="checkbox-input"
+                placeholder="Full name"
+              />
+
+              <label for="fullname" class="checkbox-label">Name</label>
+            </div>
+
+            <!--Radio-->
+
+            <div class="checkbox-cont">
+              <input
+                type="radio"
+                name="fullname"
+                class="checkbox-input"
+                placeholder="Full name"
+              />
+
+              <label for="fullname" class="checkbox-label">Name</label>
+            </div>
+
+            <!--Toggle Button-->
+
+            <div class="toggle-btn">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider-round"></span>
+            </div>
+          </div>
+
+          <h3 class="showCodeToggle" onclick="showCodeToggle()"></h3>
+
+          <div class="code hideCode">
+            <iframe
+              src="https://carbon.now.sh/embed/lqjfFHLnJGrGQcyBVrsF"
+              style="
+                width: 100%;
+                height: 682px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
