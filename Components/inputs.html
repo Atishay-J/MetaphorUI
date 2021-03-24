@@ -58,7 +58,7 @@
 
         <div class="exampleCont">
           <h3 class="exampleText">Text Input</h3>
-          <div class="flexCont flex-column">
+          <div class="flexCont">
             <!--Simple Text Input-->
 
             <div class="input-cont">
@@ -81,6 +81,19 @@
                 placeholder="Full name"
               />
             </div>
+
+            <!-- Disabled Input -->
+
+            <div class="input-cont">
+              <input
+                type="text"
+                name="fullname"
+                class="simpleText-input disabled-input"
+                disabled
+                placeholder="Disabled"
+              />
+            </div>
+
             <!-- BOXED INPUT -->
             <div class="input-cont boxed-input-cont">
               <label for="fullname" class="textInput-label">Name</label>
@@ -97,16 +110,104 @@
 
           <div class="code hideCode">
             <iframe
-              src="https://carbon.now.sh/embed/wdAmoi4EniYjT8jfk2S5"
-              style="
-                width: 100%;
-                height: 682px;
-                border: 0;
-                transform: scale(1);
-                overflow: hidden;
-              "
-              sandbox="allow-scripts allow-same-origin"
-            >
+            src="https://carbon.now.sh/embed/UsIToXjaUTzlzXswlO0p"
+            style="width: 100%; height: 929px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </iframe>
+          </div>
+        </div>
+
+
+        <!-- ** Form Input ** -->
+
+        <div class="exampleCont">
+          <h3 class="exampleText">Form Input</h3>
+
+          <div class="flexCont">
+
+            <!-- Required Text Input-->
+
+            <div class="input-cont">
+              <input
+                type="text"
+                name="fullname"
+                class="simpleText-input"
+                placeholder="Required"
+                required
+              />
+            </div>
+
+            <!-- Disabled input-->
+
+            <div class="input-cont">
+              <input
+                type="text"
+                name="fullname"
+                class="simpleText-input disabled-input"
+                placeholder="Disabled"
+                disabled
+              />
+            </div>
+
+            <!--Password Input-->
+
+            <div class="input-cont">
+              <input
+                type="password"
+                name="fullname"
+                class="simpleText-input"
+                placeholder="password"
+                required
+              />
+            </div>
+
+            <!--Email Input-->
+
+            <div class="input-cont">
+              <input
+                type="email"
+                name="fullname"
+                class="simpleText-input"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <!--Number input-->
+
+            <div class="input-cont">
+              <input
+                type="number"
+                name="fullname"
+                class="simpleText-input"
+                placeholder="Number"
+                required
+              />
+            </div>
+
+            <!-- Date Input -->
+
+            <div class="input-cont">
+              <input
+                type="date"
+                name="fullname"
+                class="simpleText-input"
+                placeholder="Date"
+                required
+              />
+            </div>
+           
+          </div>
+
+          <h3 class="showCodeToggle" onclick="showCodeToggle()"></h3>
+
+          <div class="code hideCode">
+           <iframe
+  src="https://carbon.now.sh/embed/ZGdR3Gl4CJm9CtMrHbxD"
+  style="width: 100%; height: 1518px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
             </iframe>
           </div>
         </div>
@@ -115,7 +216,7 @@
 
         <div class="exampleCont">
           <h3 class="exampleText">Other Inputs</h3>
-          <div class="flexCont flex-column">
+          <div class="flexCont ">
             <!--CheckBox-->
 
             <div class="checkbox-cont">
@@ -126,7 +227,7 @@
                 placeholder="Full name"
               />
 
-              <label for="fullname" class="checkbox-label">Name</label>
+              <label for="fullname" class="checkbox-label">Checkbox</label>
             </div>
 
             <!--Radio-->
@@ -139,7 +240,7 @@
                 placeholder="Full name"
               />
 
-              <label for="fullname" class="checkbox-label">Name</label>
+              <label for="fullname" class="checkbox-label">Radio</label>
             </div>
 
             <!--Toggle Button-->

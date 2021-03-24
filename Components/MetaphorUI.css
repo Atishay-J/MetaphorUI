@@ -473,6 +473,9 @@ button {
 input {
   outline: none;
 }
+.disabled-input {
+  cursor: not-allowed;
+}
 .input-cont {
   display: flex;
   align-items: center;
