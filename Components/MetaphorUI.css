@@ -3,6 +3,16 @@
 
 :root {
   --fontBlack: rgb(24, 24, 24);
+  --fontGray: rgb(97, 96, 96);
+  --colRed: #db2b39;
+  --colRed2: rgb(221, 52, 52);
+  --colViolet: #b91372;
+  --colBlue: #998fc7;
+  --colWhite: #f1f1f1;
+  --colSuccess: #ee8434;
+  --colDanger: #d10000;
+  --colAlert: #d17b0f;
+  --colFail: #78bc61;
   --font1: "Montserrat", sans-serif;
   --font2: "Open Sans", sans-serif;
 }
@@ -10,6 +20,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* ***************** UNIVERSAL CLASSES ********************** */
+
+.primary {
+  background: var(--colRed);
+}
+.secondry {
+  background: var(--colViolet);
+}
+.disabled {
+  background: var(--colBlue);
+}
+.success {
+  background: var(--colSuccess);
+}
+.alert {
+  background: var(--colAlert);
+}
+.danger {
+  background: var(--colDanger);
+}
+.fail {
+  background: var(--colFail);
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 
 /* ***************** TEXT STYLES ******************** */
@@ -189,4 +232,148 @@
     rgba(221, 221, 221, 0.75),
     rgba(221, 221, 221, 0)
   );
+}
+
+/* ************ BUTTON COMPONENT ********************** */
+button {
+  outline: none;
+}
+.primary-btn {
+  background: var(--colRed);
+  cursor: pointer;
+}
+.secondry-btn {
+  background: var(--colViolet);
+  cursor: pointer;
+}
+.disabled-btn {
+  background: var(--colBlue);
+  cursor: not-allowed;
+}
+.btn {
+  border: none;
+  width: 6rem;
+  height: 1.9rem;
+  color: var(--colWhite);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn-pill {
+  border-radius: 50px;
+}
+.btn-rounded {
+  border-radius: 12px;
+}
+.btn-square {
+  border-radius: 2px;
+}
+
+.floating-btn {
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colWhite);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.floating-btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/*********************** CARD COMPONETS ************************** */
+
+/******* BADGE CARDS ******* */
+
+.card {
+  width: 18rem;
+  /* height: 22rem; */
+  border: 1px solid rgba(231, 231, 231, 0.596);
+  box-shadow: 5px 5px 12px -4px #b5c1b4;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card-badge {
+  font-size: 4rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    153deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(236, 241, 247) 0%,
+    rgb(245, 245, 245) 62%
+  );
+  border: 1px solid rgba(231, 231, 231, 0.596);
+  box-shadow: 5px 5px 12px -4px #b5c1b4;
+  border-radius: 50px;
+  padding: 10px;
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  margin-top: -3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colFail);
+}
+.card-banner {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--colFail);
+  margin-top: 0.8rem;
+}
+.badgeCard-image {
+  display: block;
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 2rem;
+}
+.card-text-cont {
+  margin-top: 1rem;
+}
+.card-title {
+  font-size: 1rem;
+  font-family: var(--font2);
+  font-weight: 600;
+}
+.card-para {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+.card-btn {
+  display: block;
+  border: none;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 50px;
+  background: var(--colFail);
+  color: var(--colWhite);
+  margin: auto;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+/* ******* PRODUCT CARD  ********* */
+
+.productCard-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.star-rating-cont {
+  display: flex;
+  align-items: flex-end;
+  color: var(--colFail);
+}
+.star-rating-text {
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+  color: var(--fontGray);
 }

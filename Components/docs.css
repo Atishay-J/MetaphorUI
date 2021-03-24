@@ -2,7 +2,9 @@
   --bg-black: rgb(27, 27, 27);
   --bodyBlack: #121212;
   --fontWhite: #f5f5f5;
+  --bodyWhite: #f5f5f5;
   --fontRed: rgb(211, 19, 67);
+  --fontGray: #afafaa;
   --mainRed: #cb4545;
   --font1: "Montserrat", sans-serif;
   --fontLogo: "Lora", serif;
@@ -80,6 +82,7 @@ a {
   flex: 60%;
   padding: 20px;
   padding-left: 2.8rem;
+  background: var(--bodyWhite);
 }
 .navItems {
   display: none;
@@ -101,15 +104,28 @@ a {
 .exampleCont {
   border: 1px solid rgba(220, 221, 220, 0.705);
   margin-top: 3rem;
-  text-align: center;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  /* text-align: center; */
   border-radius: 20px;
   -webkit-box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
   -moz-box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
   box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
 }
+.exampleText {
+  font-size: 0.8rem;
+  font-family: var(--font1);
+  font-weight: 100;
+  color: var(--fontGray);
+}
+.flexCont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
 .code {
   width: 80%;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 2rem;
   margin-bottom: 2.5rem;
   padding: 10px;
@@ -127,10 +143,10 @@ a {
   border: none;
 }
 
-/* CARBON IO CALSSES */
+/* CARBON IO CALSSES
 .container.jsx-1281910128 {
   padding: 0px !important;
-}
+} */
 
 @media only screen and (min-width: 668px) {
   .navItems {
@@ -152,7 +168,7 @@ a {
   }
   .exampleCont {
     width: 80%;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 3rem;
   }
 }
