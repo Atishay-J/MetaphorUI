@@ -775,3 +775,60 @@ input:checked + .toggle-slider-round:after {
   width: 40%;
   display: flex;
 }
+
+/* **************************** AVATAR COMPONENT **************************** */
+
+.avatar-cont {
+  -webkit-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.13);
+  -moz-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.13);
+  box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.13);
+  border-radius: 50%;
+  position: relative;
+}
+.avatar-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.avatar-xs {
+  width: 3rem;
+  height: 3rem;
+}
+.avatar-s {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+.avatar-m {
+  width: 4rem;
+  height: 4rem;
+}
+.avatar-l {
+  width: 4.3rem;
+  height: 4.3rem;
+}
+.avatar-xl {
+  width: 5rem;
+  height: 5rem;
+}
+.avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0.1rem;
+  border-radius: 50%;
+}
+
+/* ******************** BADGES COMPONENT ************************ */
+
+.badge-online {
+  color: var(--colSuccess);
+}
+.badge-offline {
+  color: var(--fontGray);
+}
+.badge-dnd {
+  color: var(--colDanger);
+}
+.badge-success {
+  color: var(--colBlue);
+}

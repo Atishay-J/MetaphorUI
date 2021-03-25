@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Metaphor UI | Images</title>
+    <title>Metaphor UI | Avatars</title>
     <link rel="stylesheet" href="./docs.css" />
     <link rel="stylesheet" href="./MetaphorUI.css" />
   </head>
@@ -40,36 +40,58 @@
           <a class="sidebarListItem" href="./Typography.html">Typography</a>
           <a class="sidebarListItem" href="./Buttons.html">Buttons</a>
           <a class="sidebarListItem" href="./Cards.html">Cards</a>
-          <a class="sidebarListItem selected" href="./Images.html">Images</a>
+          <a class="sidebarListItem" href="./Images.html">Images</a>
           <a class="sidebarListItem" href="./inputs.html">Inputs</a>
           <a class="sidebarListItem" href="./lists.html">Lists</a>
           <a class="sidebarListItem" href="./Navigation.html">Navigation</a>
-          <a class="sidebarListItem" href="./Avatars.html">Avatars</a>
+          <a class="sidebarListItem selected" href="./Avatars.html">Avatars</a>
         </div>
       </div>
 
       <!-- MAIN CONTENT CONTAINER -->
 
       <div class="contentCont">
-        <h1 class="heading-l">Images</h1>
-        <p class="para-m mt4">Responsive Images for all uses</p>
+        <h1 class="heading-l">Avatars</h1>
+        <p class="para-m mt4">Different types of Avatars</p>
         <hr class="hr-light mt8" />
 
         <h4 class="heading-s mt10">Examples:</h4>
 
-        <!-- Square Image -->
+        <!-- ** Avatars  ** -->
 
         <div class="exampleCont">
-          <h3 class="exampleText">Responsive Image (Maintains Aspect ratio)</h3>
+          <h3 class="exampleText">Avatars (xs, s, m, l, xl)</h3>
+
           <div class="flexCont">
-            <div class="responsiveImg-cont">
-              <img src="../Assests/Nature 3.jpg" class="responsive-img" />
+            <div class="avatar-cont avatar-xs">
+              <img
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
+              />
             </div>
-
-            <!-- Circle Image -->
-
-            <div class="circleImg-cont">
-              <img src="../Assests/Nature 3.jpg" class="circle-img" />
+            <div class="avatar-cont avatar-s">
+              <img
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
+              />
+            </div>
+            <div class="avatar-cont avatar-m">
+              <img
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
+              />
+            </div>
+            <div class="avatar-cont avatar-l">
+              <img
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
+              />
+            </div>
+            <div class="avatar-cont avatar-xl">
+              <img
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
+              />
             </div>
           </div>
 
@@ -77,10 +99,10 @@
 
           <div class="code hideCode">
             <iframe
-              src="https://carbon.now.sh/embed/yoYk41nDxKKMN5f3nx2b"
+              src="https://carbon.now.sh/embed/HbmSKcEHWdg38OuEEzQP"
               style="
                 width: 100%;
-                height: 324px;
+                height: 739px;
                 border: 0;
                 transform: scale(1);
                 overflow: hidden;
@@ -91,49 +113,65 @@
           </div>
         </div>
 
-        <!--Blured Image -->
+        <!-- ** Avatars with Badge ** -->
 
         <div class="exampleCont">
-          <h3 class="exampleText">
-            Blured Image (Class: blur-2, blur-4, blue-8, blur-10)
-          </h3>
+          <h3 class="exampleText">Avatars with Badge</h3>
+
           <div class="flexCont">
-            <div class="responsiveImg-cont">
+            <div class="avatar-cont avatar-xs">
               <img
-                src="../Assests/Nature 3.jpg"
-                class="responsive-img blur-2"
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
               />
+              <ion-icon
+                name="ellipse-sharp"
+                class="avatar-badge badge-online"
+              ></ion-icon>
             </div>
 
-            <div class="responsiveImg-cont">
+            <div class="avatar-cont avatar-s">
               <img
-                src="../Assests/Nature 3.jpg"
-                class="responsive-img blur-4"
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
               />
+              <ion-icon
+                name="ellipse-sharp"
+                class="avatar-badge badge-offline"
+              ></ion-icon>
             </div>
 
-            <div class="responsiveImg-cont">
+            <div class="avatar-cont avatar-m">
               <img
-                src="../Assests/Nature 3.jpg"
-                class="responsive-img blur-8"
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
               />
+              <ion-icon
+                name="remove-circle-sharp"
+                class="avatar-badge badge-dnd"
+              ></ion-icon>
             </div>
 
-            <div class="responsiveImg-cont">
+            <div class="avatar-cont avatar-l">
               <img
-                src="../Assests/Nature 3.jpg"
-                class="responsive-img blur-10"
+                class="avatar-img"
+                src="../Assests/Profile Images/woman profile 2.jpg"
               />
+              <ion-icon
+                name="checkmark-done-circle-sharp"
+                class="avatar-badge badge-success"
+              ></ion-icon>
             </div>
           </div>
+
           <h3 class="showCodeToggle" onclick="showCodeToggle()"></h3>
 
           <div class="code hideCode">
             <iframe
-              src="https://carbon.now.sh/embed/KB7c1BspVQC34AXmLa6a"
+              src="https://carbon.now.sh/embed/ui5yUnKU6WIvtDX7Tn9e"
               style="
                 width: 100%;
-                height: 625px;
+                height: 948px;
                 border: 0;
                 transform: scale(1);
                 overflow: hidden;
