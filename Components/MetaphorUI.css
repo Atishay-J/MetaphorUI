@@ -79,6 +79,9 @@
 .space-around {
   justify-content: space-around;
 }
+.align-center {
+  align-items: center;
+}
 
 /* ***************** TEXT STYLES ******************** */
 
@@ -608,7 +611,8 @@ input:checked + .toggle-slider-round:after {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 1rem;
+  align-items: center;
+  padding: 1rem;
   width: 10rem;
   height: 1.5rem;
   margin-top: 0.8rem;
@@ -689,4 +693,85 @@ input:checked + .toggle-slider-round:after {
   font-size: 0.8rem;
   padding-right: 0.4rem;
   color: var(--colDarkGray);
+}
+
+/* ************************ NAVIGATION COMPONENT *************************** */
+
+.vertical-nav {
+  border: 1px solid rgb(245, 243, 243);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+}
+.nav-link {
+  color: var(--fontBlack);
+  display: flex;
+  align-items: center;
+}
+
+/* BOTTOM NAVIGATIN *********** */
+
+.bottom-nav-cont {
+  -webkit-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.175);
+  -moz-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.175);
+  box-shadow: 1px 1px 12px 0px rgba(114, 73, 73, 0.175);
+  border-radius: 30px;
+  padding: 1px 3px 1px 3px;
+}
+.bottom-nav {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18rem;
+}
+.nav-item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--colLightGray);
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+.nav-item:hover {
+  background: var(--colLightGray);
+}
+
+/* NAVBAR ************************** */
+
+.navbar-cont {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.175);
+  -moz-box-shadow: 1px 1px 12px 0px rgba(50, 50, 50, 0.175);
+  box-shadow: 1px 1px 12px 0px rgba(114, 73, 73, 0.175);
+  border-radius: 30px;
+  padding: 1px 3px 1px 3px;
+}
+.navbar-item {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--colLightGray);
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.nav-text {
+  font-size: 0.6rem;
+}
+.navbar-items-cont {
+  width: 40%;
+  display: flex;
 }
