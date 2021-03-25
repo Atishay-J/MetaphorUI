@@ -289,6 +289,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 0.8rem;
 }
 
 .btn-pill {
@@ -413,29 +414,29 @@ button {
 
 .horizontal-card {
   width: 100%;
-  height: 13rem;
+  min-height: 13rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .horizontalCard-img {
-  /* width: auto; */
-  width: 30%;
-  /* height: 100%; */
+  width: 100%;
+
   border-radius: 10px;
 }
 .horizontalCard-text {
-  margin-left: 2rem;
-  width: 60%;
+  width: 100%;
 }
 .horizontalCard-btn {
   display: block;
-  /* float: left; */
+  float: left;
   margin-top: 1.5rem;
 }
 .horizontalCard-btn::after {
   content: "";
   clear: both;
-  /* display: table; */
 }
 /* ********************************* RESPONSIVE IMAGES ************************************ */
 
@@ -461,7 +462,6 @@ button {
   padding: 40% 0 0;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid gray;
 }
 .circle-img {
   position: absolute;
@@ -840,8 +840,8 @@ input:checked + .toggle-slider-round:after {
 
 .alert-cont {
   width: 100%;
-  height: 2.2rem;
-  border-radius: 20px;
+  height: 2.6rem;
+  border-radius: 1.8rem;
   padding: 4px 10px 4px 10px;
   display: flex;
   align-items: center;
@@ -849,4 +849,23 @@ input:checked + .toggle-slider-round:after {
 }
 .alert-text {
   margin-left: 2rem;
+}
+
+@media only screen and (min-width: 668px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+  .horizontal-card {
+    flex-direction: row;
+    align-items: unset;
+    /* justify-content: space-evenly; */
+    height: 13rem;
+  }
+  .horizontalCard-img {
+    max-width: 30%;
+  }
+  .horizontalCard-text {
+    margin-left: 2rem;
+  }
 }

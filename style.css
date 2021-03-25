@@ -118,6 +118,20 @@ a {
 
 @media only screen and (min-width: 668px) {
   .introText {
-    font-size: 1.45rem;
+    font-size: 2rem;
+  }
+  .logoText {
+    font-size: 1.3rem;
+  }
+  .navDocs {
+    font-size: 1.1rem;
+  }
+  .navVersion {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 9.4rem;
+    height: 2.8rem;
+    font-size: 1rem;
   }
 }

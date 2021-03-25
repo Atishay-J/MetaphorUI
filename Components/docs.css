@@ -40,7 +40,7 @@ a {
 }
 
 .logoText {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 100;
 }
 .logoTextHigh {
@@ -50,23 +50,38 @@ a {
 }
 .navDocs {
   margin-right: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   border-bottom: 1px solid var(--fontWhite);
 }
 .navVersion {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: var(--font1);
   font-weight: 100;
 }
+.navItems {
+  display: none;
+}
+.burgerIcon {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+/* ****************** MAIN CONTAINER ************** */
 
 .mainCont {
   max-width: 100vw;
   display: flex;
   justify-content: space-evenly;
   /* border: 2px solid red; */
+  position: relative;
 }
+
+/* ************ SIDEBAR CONTAINER *********** */
+
 .sidebarCont {
-  position: sticky;
+  width: 60%;
+  /* position: sticky; */
+  position: absolute;
+  left: 0;
   top: 0;
   background: var(--bg-black);
   /* flex: 40%; */
@@ -90,26 +105,23 @@ a {
   background: #383535;
   border-radius: 20px;
 }
-.contentCont {
-  /* color: white; */
-  /* flex: 50%; */
-  padding: 20px;
-  padding-left: 2.8rem;
-  background: var(--bodyWhite);
-}
-.navItems {
-  display: none;
-}
-.burgerIcon {
-  font-size: 1.8rem;
-  cursor: pointer;
-}
+
 .hideSidebar {
   display: none;
 }
+
+/* ***************** CONTENT CONTAINER ************** */
+
+.contentCont {
+  padding: 1.2rem;
+  background: var(--bodyWhite);
+  min-height: 100vh;
+  width: 100vw;
+}
+
 .overlay {
-  background: rgba(54, 54, 54, 0.87);
-  z-index: 5;
+  /* background: rgba(54, 54, 54, 0.87); */
+  filter: brightness(60%);
 }
 .hideOverflow {
   overflow: hidden;
@@ -117,7 +129,7 @@ a {
 .exampleCont {
   border: 1px solid rgba(220, 221, 220, 0.705);
   margin-top: 3rem;
-  padding: 2rem;
+  padding: 1.4rem;
   /* text-align: center; */
   border-radius: 20px;
   -webkit-box-shadow: 2px 0px 6px 0px rgba(228, 228, 228, 0.589);
@@ -129,6 +141,21 @@ a {
   font-family: var(--font2);
   font-weight: 500;
   color: var(--fontGray);
+}
+.github-icon {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+.docs-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.2rem;
+  background: #4d1d29;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 0.3rem;
+  margin-top: 0.3rem;
 }
 .flexCont {
   display: flex;
@@ -148,7 +175,7 @@ a {
   margin-top: 2.2rem;
 }
 .code {
-  width: 80%;
+  width: 100%;
   /* margin: auto; */
   margin-top: 2rem;
   margin-bottom: 2.5rem;
@@ -158,32 +185,23 @@ a {
   -webkit-box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.78);
   -moz-box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.78);
   box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.78);
+
+  /* z-index: 1; */
 }
 .codeFrame {
-  display: block;
+  /* display: block; */
+  /* position: relative; */
   background: #000;
   width: 100%;
   /* height: 250px; */
   border: none;
+  /* z-index: 0; */
 }
 
 .hideCode {
   display: none;
 }
-.github-icon {
-  font-size: 1.2rem;
-  margin-right: 0.3rem;
-}
-.docs-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 8px;
-  background: #4d1d29;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-left: 0.3rem;
-}
+
 @media only screen and (min-width: 668px) {
   .navItems {
     display: flex;
@@ -197,14 +215,22 @@ a {
     display: block;
   }
   .sidebarCont {
-    flex: 22%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 20%;
   }
+
   .contentCont {
-    flex: 78%;
+    width: 80%;
+    padding-left: 2.5rem;
   }
   .exampleCont {
     width: 80%;
-    /* margin: auto; */
     margin-top: 3rem;
+    padding: 2rem;
+  }
+  .code {
+    width: 80%;
   }
 }
