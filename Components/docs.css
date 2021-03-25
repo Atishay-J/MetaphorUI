@@ -170,7 +170,14 @@ a {
 .hideCode {
   display: none;
 }
-
+.docs-link {
+  display: inline-block;
+  /* width: 2rem; */
+  padding: 8px;
+  background: #4d1d29;
+  border-radius: 10px;
+  cursor: pointer;
+}
 @media only screen and (min-width: 668px) {
   .navItems {
     display: flex;
