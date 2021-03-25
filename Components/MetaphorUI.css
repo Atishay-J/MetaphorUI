@@ -44,6 +44,9 @@
 .danger {
   background: var(--colDanger);
 }
+.info {
+  background: var(--colBlue);
+}
 .fail {
   background: var(--colFail);
 }
@@ -831,4 +834,19 @@ input:checked + .toggle-slider-round:after {
 }
 .badge-success {
   color: var(--colBlue);
+}
+
+/* ************************ ALERTS COMPONENT ************************** */
+
+.alert-cont {
+  width: 100%;
+  height: 2.2rem;
+  border-radius: 20px;
+  padding: 4px 10px 4px 10px;
+  display: flex;
+  align-items: center;
+  color: var(--colWhite);
+}
+.alert-text {
+  margin-left: 2rem;
 }

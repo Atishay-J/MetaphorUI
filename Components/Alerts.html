@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Metaphor UI Text</title>
+    <title>Metaphor UI | Alerts</title>
     <link rel="stylesheet" href="./docs.css" />
     <link rel="stylesheet" href="./MetaphorUI.css" />
   </head>
@@ -37,9 +37,7 @@
         <div class="sidebarList">
           <a class="sidebarListItem" href="docs.html">Getting Started</a>
           <hr class="hr-dark mt8" />
-          <a class="sidebarListItem selected" href="./Typography.html"
-            >Typography</a
-          >
+          <a class="sidebarListItem" href="./Typography.html">Typography</a>
           <a class="sidebarListItem" href="./Buttons.html">Buttons</a>
           <a class="sidebarListItem" href="./Cards.html">Cards</a>
           <a class="sidebarListItem" href="./Images.html">Images</a>
@@ -47,57 +45,56 @@
           <a class="sidebarListItem" href="./lists.html">Lists</a>
           <a class="sidebarListItem" href="./Navigation.html">Navigation</a>
           <a class="sidebarListItem" href="./Avatars.html">Avatars</a>
-          <a class="sidebarListItem" href="./Alerts.html">Alerts</a>
+          <a class="sidebarListItem selected" href="./Alerts.html">Alerts</a>
         </div>
       </div>
 
       <!-- MAIN CONTENT CONTAINER -->
 
       <div class="contentCont">
-        <h1 class="heading-l">Typography</h1>
-        <p class="para-m mt4">Default classes for quickly building the UI</p>
+        <h1 class="heading-l">Alerts</h1>
+        <p class="para-m mt4">Different types of Alerts</p>
         <hr class="hr-light mt8" />
-        <h4 class="heading-s mt10">
-          Just add class name to get a default font size
-        </h4>
-        <p class="para-s mt4">Three size to choose from Small, medium, large</p>
-        <hr class="hr-gradient mt8" />
 
         <h4 class="heading-s mt10">Examples:</h4>
 
+        <!-- ** Alerts  ** -->
+
         <div class="exampleCont">
-          <h4 class="exampleText">Headings</h4>
-          <h1 class="heading-l mt10">Heading Large</h1>
-          <h1 class="heading-m">Heading Medium</h1>
-          <h1 class="heading-s">Heading small</h1>
-          <h3 class="showCodeToggle" onclick="showCodeToggle()"></h3>
-          <div class="code hideCode">
-            <iframe
-              src="https://carbon.now.sh/embed/eqvSh8paJKEYkWSdbYrX"
-              style="
-                width: 100%;
-                height: 231px;
-                border: 0;
-                transform: scale(1);
-                overflow: hidden;
-              "
-              sandbox="allow-scripts allow-same-origin"
-            >
-            </iframe>
+          <h3 class="exampleText">Alerts</h3>
+
+          <div class="flexCont flex-column">
+            <div class="alert-cont success">
+              <ion-icon
+                name="checkmark-circle-sharp"
+                class="alert-icon"
+              ></ion-icon>
+              <p class="alert-text">Successful</p>
+            </div>
+
+            <div class="alert-cont danger">
+              <ion-icon name="alert-circle-sharp" class="alert-icon"></ion-icon>
+              <p class="alert-text">Danger</p>
+            </div>
+
+            <div class="alert-cont info">
+              <ion-icon name="alert-circle-sharp" class="alert-icon"></ion-icon>
+              <p class="alert-text">Info</p>
+            </div>
+            <div class="alert-cont alert">
+              <ion-icon name="alert-circle-sharp" class="alert-icon"></ion-icon>
+              <p class="alert-text">Warning</p>
+            </div>
           </div>
-        </div>
-        <div class="exampleCont">
-          <h4 class="exampleText">Paragraphs</h4>
-          <p class="para-l mt10">Paragraph Large</p>
-          <p class="para-m">Paragraph Medium</p>
-          <p class="para-s">Paragraph small</p>
+
           <h3 class="showCodeToggle" onclick="showCodeToggle()"></h3>
+
           <div class="code hideCode">
             <iframe
-              src="https://carbon.now.sh/embed/SRNthmUG5hqbBdJZ55B9"
+              src="https://carbon.now.sh/embed/Q713oTPs7meMP2L9Wz8P"
               style="
                 width: 100%;
-                height: 226px;
+                height: 587px;
                 border: 0;
                 transform: scale(1);
                 overflow: hidden;
