@@ -13,6 +13,8 @@
   --colDanger: #d10000;
   --colAlert: #d17b0f;
   --colFail: #78bc61;
+  --colLightGray: #dddddd;
+  --colDarkGray: #333333;
   --font1: "Montserrat", sans-serif;
   --font2: "Open Sans", sans-serif;
 }
@@ -66,6 +68,16 @@
 .flex-row-rev {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.space-around {
+  justify-content: space-around;
 }
 
 /* ***************** TEXT STYLES ******************** */
@@ -580,4 +592,101 @@ input:checked + .toggle-slider-round:after {
 
 .toggle-slider-round:before {
   border-radius: 50%;
+}
+
+/* ***************************** LIST COMPONENT *************************** */
+
+.list-cont {
+  list-style: none;
+  transition: 0.4s;
+}
+.list-icon {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  width: 10rem;
+  height: 1.5rem;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.list-item:hover {
+  background: var(--colLightGray);
+}
+
+/* **** XL NUMBER LIST ***** */
+
+.xl-number-list {
+  list-style: none;
+  counter-reset: counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.xl-number-list .xl-number-list-item {
+  counter-increment: counter;
+  display: flex;
+  width: 50%;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+.xl-number-list .xl-number-list-item::before {
+  content: "0" counter(counter);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  line-height: 1;
+}
+
+/* **** SIMPLE NUMBERD LIST **** */
+
+.number-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.number-list .number-list-item {
+  counter-increment: my-awesome-counter;
+}
+.number-list .number-list-item::before {
+  content: counter(my-awesome-counter) ". ";
+  color: var(--fontGray);
+  /* font-weight: bold; */
+}
+
+/* **** ARROW LIST ******* */
+
+.arrow-list {
+  list-style: none;
+}
+.arrow-list-item {
+  margin-top: 0.3rem;
+}
+.arrow-list-item::before {
+  content: "\1F882";
+  font-size: 0.8rem;
+  padding-right: 0.4rem;
+  color: var(--colDarkGray);
+}
+
+/* **** Diamond LIST **** */
+
+.diamond-list {
+  list-style: none;
+}
+.diamond-list-item {
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+.diamond-list-item::before {
+  content: "\1F79C";
+  font-size: 0.8rem;
+  padding-right: 0.4rem;
+  color: var(--colDarkGray);
 }

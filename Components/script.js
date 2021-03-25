@@ -15,14 +15,6 @@ Array.from(codeToggler).forEach((el) => {
 });
 
 const showCodeToggle = (event) => {
-  // code.classList.toggle("hideCode");
-  // if (codeToggler.innerHTML == "Show Snippet ▼") {
-  //   codeToggler.innerHTML = "Hide Snippet ▲";
-  // } else {
-  //   codeToggler.innerHTML = "Show Snippet ▼";
-  // }
-  // console.log("looggg");
-  /**************** */
   Array.from(code).forEach((el) => {
     el.classList.toggle("hideCode");
   });
