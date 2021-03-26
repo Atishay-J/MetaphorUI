@@ -330,6 +330,7 @@ button {
   box-shadow: 5px 5px 12px -4px #b5c1b4;
   padding: 20px;
   border-radius: 20px;
+  position: relative;
 }
 .card-badge {
   font-size: 4rem;
@@ -367,6 +368,29 @@ button {
   border-radius: 50px;
   margin: auto;
   margin-top: 2rem;
+}
+.badgeProduct-img {
+  width: 100%;
+  height: 10rem;
+}
+.ribbon-badge-tilted {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: 0px;
+  height: 0;
+  border: 0.8rem solid var(--colFail);
+  border-left: 1rem solid var(--colFail);
+  border-right: 1rem solid transparent;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding-right: 3.5rem;
+  position: absolute;
+  top: 1.8rem;
+  right: 0rem;
+  font-size: 0.6rem;
+  color: var(--colWhite);
+  rotate: 23deg;
 }
 .card-text-cont {
   margin-top: 1rem;
