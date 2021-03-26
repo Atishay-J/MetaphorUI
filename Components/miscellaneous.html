@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metaphor UI | Miscellaneous</title>
+    <link rel="stylesheet" href="./docs.css" />
+    <link rel="stylesheet" href="./MetaphorUI.css" />
+  </head>
+  <body>
+    <!-- TOP NAV BAR -->
+
+    <nav class="navCont">
+      <div class="logCont">
+        <a href="../index.html" class="logoLink"
+          ><h1 class="logoText">
+            Meta<span class="logoTextHigh">phor</span>
+          </h1></a
+        >
+      </div>
+      <div class="navItems">
+        <a href="./docs.html" class="navDocs">Docs</a>
+        <h3 class="navVersion">Ver. 0.0.1</h3>
+      </div>
+      <div class="burgerIcon" onclick="toggleSidebar()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="mainCont">
+      <!-- SIDEBAR CONTAINER -->
+
+      <div class="sidebarCont hideSidebar">
+        <div class="sidebarList">
+          <a class="sidebarListItem" href="docs.html">Getting Started</a>
+          <hr class="hr-dark mt8" />
+          <a class="sidebarListItem" href="./Typography.html">Typography</a>
+          <a class="sidebarListItem" href="./Buttons.html">Buttons</a>
+          <a class="sidebarListItem" href="./Cards.html">Cards</a>
+          <a class="sidebarListItem" href="./Images.html">Images</a>
+          <a class="sidebarListItem" href="./inputs.html">Inputs</a>
+          <a class="sidebarListItem" href="./lists.html">Lists</a>
+          <a class="sidebarListItem" href="./Navigation.html">Navigation</a>
+          <a class="sidebarListItem" href="./Avatars.html">Avatars</a>
+          <a class="sidebarListItem" href="./Alerts.html">Alerts</a>
+          <a class="sidebarListItem selected" href="./miscellaneous.html"
+            >Miscellaneous</a
+          >
+        </div>
+        <div class="signature-cont">
+          <hr class="hr-dark mt8" />
+          <h4 class="signature-text">
+            Made with 🤎 by
+            <a class="signature-link" href="https://atishayjain.netlify.app/"
+              >Atishay Jain</a
+            >
+          </h4>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT CONTAINER -->
+
+      <div class="contentCont">
+        <h1 class="heading-l">Miscellaneous</h1>
+        <p class="para-m mt4">Different types of Miscellaneous classes</p>
+        <hr class="hr-light mt8" />
+
+        <h4 class="heading-s mt10">Miscellaneous Classes</h4>
+
+        <!-- Miscellaneous -->
+
+        <div class="exampleCont mt15">
+          <!-- DEFAULT COLORS -->
+          <h3 class="para-m ">Default Colors</h3>
+          <div class="flexCont flex-wrap">
+            <div class="class-cont flexCont">
+              <p class="class-name">.primary</p>
+              <div class="class-preview primary"></div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.secondry</p>
+              <div class="class-preview secondry"></div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.disabled</p>
+              <div class="class-preview disabled"></div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.success</p>
+              <div class="class-preview success"></div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.alert</p>
+              <div class="class-preview alert"></div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.danger</p>
+              <div class="class-preview danger"></div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.info</p>
+              <div class="class-preview info"></div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.fail</p>
+              <div class="class-preview fail"></div>
+            </div>
+          </div>
+
+          <!-- TEXT ALIGN -->
+          <h3 class="para-m mt15">Text align</h3>
+          <div class="flexCont">
+            <div class="class-cont flexCont">
+              <p class="class-name">.text-center</p>
+              <div class="class-preview fail text-center">abc</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.text-left</p>
+              <div class="class-preview fail text-left">abc</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.text-right</p>
+              <div class="class-preview fail text-right">abc</div>
+            </div>
+          </div>
+
+           <!-- Margins  -->
+           
+           <h3 class="para-m mt15">Margins</h3>
+           <h3 class="exampleText mt15">Margins Top</h3>
+           <div class="flexCont  justify-left">
+             <div class="class-cont flexCont">
+               <p class="class-name">.mt4</p>
+               <div class="class-preview fail text-center">Margin top 0.4rem</div>
+             </div>
+             <div class="class-cont flexCont">
+               <p class="class-name">.mt8</p>
+               <div class="class-preview fail text-left">Margin top 0.8rem</div>
+             </div>
+             <div class="class-cont flexCont">
+               <p class="class-name">.mt10</p>
+               <div class="class-preview fail text-right">Margin top 1rem</div>
+             </div>
+             <div class="class-cont flexCont">
+                <p class="class-name">.mt15</p>
+                <div class="class-preview fail text-right">Margin top 1.5rem</div>
+              </div>
+           </div>
+           
+           <h3 class="exampleText">Margins Left</h3> 
+           <div class="flexCont  justify-left">
+            <div class="class-cont flexCont">
+              <p class="class-name">.ml4</p>
+              <div class="class-preview fail text-center">Margin left 0.4rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.ml8</p>
+              <div class="class-preview fail text-center">Margin left 0.8rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.ml10</p>
+              <div class="class-preview fail text-center">Margin left 1rem</div>
+            </div>
+            <div class="class-cont flexCont">
+               <p class="class-name">.ml15</p>
+               <div class="class-preview fail text-center">Margin left 1.5rem</div>
+             </div>
+          </div>
+          
+          <h3 class="exampleText">Margins Right</h3>
+          <div class="flexCont  justify-left">
+            <div class="class-cont flexCont">
+              <p class="class-name">.mr4</p>
+              <div class="class-preview fail text-center">Margin right 0.4rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.mr8</p>
+              <div class="class-preview fail text-center">Margin right 0.8rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.mr10</p>
+              <div class="class-preview fail text-center">Margin right 1rem</div>
+            </div>
+            <div class="class-cont flexCont">
+               <p class="class-name">.mr15</p>
+               <div class="class-preview fail text-center">Margin right 1.5rem</div>
+             </div>
+          </div>
+
+          <h3 class="exampleText">Margins Bottom</h3>
+          <div class="flexCont  justify-left">
+            <div class="class-cont flexCont">
+              <p class="class-name">.mb4</p>
+              <div class="class-preview fail text-center">Margin bottom 0.4rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.mb8</p>
+              <div class="class-preview fail text-center">Margin bottom 0.8rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.mb10</p>
+              <div class="class-preview fail text-center">Margin bottom 1rem</div>
+            </div>
+            <div class="class-cont flexCont">
+               <p class="class-name">.mb15</p>
+               <div class="class-preview fail text-center">Margin bottom 1.5rem</div>
+             </div>
+          </div>
+
+
+
+           <!-- Paddings -->
+           
+           <h3 class="para-m mt15">Paddings</h3>
+           <h3 class="exampleText mt15">Padding Top</h3>
+           <div class="flexCont  justify-left">
+             <div class="class-cont flexCont">
+               <p class="class-name">.pt4</p>
+               <div class="class-preview fail text-center">Padding top 0.4rem</div>
+             </div>
+             <div class="class-cont flexCont">
+               <p class="class-name">.pt8</p>
+               <div class="class-preview fail text-left">Padding top 0.8rem</div>
+             </div>
+             <div class="class-cont flexCont">
+               <p class="class-name">.pt10</p>
+               <div class="class-preview fail text-right">Padding top 1rem</div>
+             </div>
+             <div class="class-cont flexCont">
+                <p class="class-name">.pt15</p>
+                <div class="class-preview fail text-right">Padding top 1.5rem</div>
+              </div>
+           </div>
+           
+           <h3 class="exampleText">Paddings Left</h3> 
+           <div class="flexCont  justify-left">
+            <div class="class-cont flexCont">
+              <p class="class-name">.pl4</p>
+              <div class="class-preview fail text-center">Padding left 0.4rem</div>
+            </div>
+            <div class="class-cont flexCont ">
+              <p class="class-name">.pl8</p>
+              <div class="class-preview fail text-center">Padding left 0.8rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.pl10</p>
+              <div class="class-preview fail text-center">Padding left 1rem</div>
+            </div>
+            <div class="class-cont flexCont">
+               <p class="class-name">.pl15</p>
+               <div class="class-preview fail text-center">Padding left 1.5rem</div>
+             </div>
+          </div>
+          
+          <h3 class="exampleText">Paddings Right</h3>
+          <div class="flexCont  justify-left">
+            <div class="class-cont flexCont">
+              <p class="class-name">.pr4</p>
+              <div class="class-preview fail text-center">Padding right 0.4rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.pr8</p>
+              <div class="class-preview fail text-center">Padding right 0.8rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.pr10</p>
+              <div class="class-preview fail text-center">Padding right 1rem</div>
+            </div>
+            <div class="class-cont flexCont">
+               <p class="class-name">.pr15</p>
+               <div class="class-preview fail text-center">Padding right 1.5rem</div>
+             </div>
+          </div>
+
+          <h3 class="exampleText">Paddings Bottom</h3>
+          <div class="flexCont  justify-left">
+            <div class="class-cont flexCont">
+              <p class="class-name">.pb4</p>
+              <div class="class-preview fail text-center">Padding bottom 0.4rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.pb8</p>
+              <div class="class-preview fail text-center">Padding bottom 0.8rem</div>
+            </div>
+            <div class="class-cont flexCont">
+              <p class="class-name">.pb10</p>
+              <div class="class-preview fail text-center">Padding bottom 1rem</div>
+            </div>
+            <div class="class-cont flexCont">
+               <p class="class-name">.pb15</p>
+               <div class="class-preview fail text-center">Padding bottom 1.5rem</div>
+             </div>
+          </div>
+
+
+            <!-- FLEXBOX -->
+
+          <h3 class="para-m">Flex Box</h3>
+
+          <div class="flex-column">
+            <div class="class-cont flexCont flex-100 space-around">
+              <p class="class-name">.flex-cont</p>
+              <div class="class-preview fail ">Make div flex</div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+              <p class="class-name">.flex-column</p>
+              <div class="class-preview fail ">
+                Make div flex with direction column
+              </div>
+              <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.flex-column-rev</p>
+                <div class="class-preview fail ">
+                  Make div flex with direction column reverse
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name ">.flex-row-rev</p>
+                <div class="class-preview fail ">
+                  Make div flex with direction row reverse
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.flex-wrap</p>
+                <div class="class-preview fail ">
+                  Makes flex wrap
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.flex-100</p>
+                <div class="class-preview fail ">
+                  Makes flex basis 100%
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.space-btw</p>
+                <div class="class-preview fail ">
+                  Justifies content as space between
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.space-evenly</p>
+                <div class="class-preview fail ">
+                  Justifies content as space evenly
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.space-around</p>
+                <div class="class-preview fail ">
+                  Justifies content as space around
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.justify-left</p>
+                <div class="class-preview fail ">
+                  Justifies content as flex-start
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.justify-right</p>
+                <div class="class-preview fail ">
+                  Justifies content as flex-right
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.align-left</p>
+                <div class="class-preview fail ">
+                  Align items as flex-start
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.align-center</p>
+                <div class="class-preview fail ">
+                  Align items as flex-center
+                </div>
+            </div>
+            <div class="class-cont flexCont flex-100 space-around">
+                <p class="class-name">.align-right</p>
+                <div class="class-preview fail ">
+                  Align items as flex-right
+                </div>
+            </div>
+        </div>
+          </div>
+        
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

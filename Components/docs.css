@@ -216,6 +216,19 @@ a {
 .hideCode {
   display: none;
 }
+.class-preview {
+  min-width: 2.5rem;
+  min-height: 1.5rem;
+  padding: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  color: var(--fontWhite);
+  box-shadow: 6px 9px 26px -11px rgba(0, 0, 0, 0.375);
+  -webkit-box-shadow: 6px 9px 26px -11px rgba(0, 0, 0, 0.375);
+  -moz-box-shadow: 6px 9px 26px -11px rgba(0, 0, 0, 0.375);
+}
 
 @media only screen and (min-width: 668px) {
   .navItems {

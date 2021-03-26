@@ -72,7 +72,9 @@
   display: flex;
   flex-direction: row-reverse;
 }
-
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .space-btw {
   justify-content: space-between;
 }
@@ -82,8 +84,23 @@
 .space-around {
   justify-content: space-around;
 }
+.justify-left {
+  justify-content: flex-start;
+}
+.justify-right {
+  justify-content: flex-end;
+}
+.flex-100 {
+  flex-basis: 100%;
+}
 .align-center {
   align-items: center;
+}
+.align-left {
+  align-items: flex-start;
+}
+.align-right {
+  align-items: flex-end;
 }
 
 /* ***************** TEXT STYLES ******************** */
@@ -379,9 +396,9 @@ button {
   align-items: center;
   width: 0px;
   height: 0;
-  border: 0.8rem solid var(--colFail);
-  border-left: 1rem solid var(--colFail);
-  border-right: 1rem solid transparent;
+  border: 1rem solid var(--colFail);
+  border-left: 0.8rem solid var(--colFail);
+  border-right: 0.8rem solid transparent;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   padding-right: 3.5rem;
@@ -390,7 +407,7 @@ button {
   right: 0rem;
   font-size: 0.6rem;
   color: var(--colWhite);
-  rotate: 23deg;
+  transform: rotate(23deg);
 }
 .card-text-cont {
   margin-top: 1rem;
