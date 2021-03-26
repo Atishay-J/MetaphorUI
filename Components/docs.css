@@ -101,6 +101,21 @@ a {
   background: var(--mainRed);
   transition: 0.3s;
 }
+.signature-cont {
+  position: absolute;
+  bottom: 5.5rem;
+}
+.signature-text {
+  font-size: 0.7rem;
+  color: rgb(172, 172, 172);
+  font-family: var(--font1);
+  font-weight: 100;
+  margin-top: 1rem;
+}
+.signature-link {
+  font-size: 0.7rem;
+  color: #dddddd;
+}
 .selected {
   background: #383535;
   border-radius: 20px;
@@ -224,6 +239,9 @@ a {
   .contentCont {
     width: 80%;
     padding-left: 2.5rem;
+  }
+  .signature-cont {
+    bottom: 1.4rem;
   }
   .exampleCont {
     width: 80%;
