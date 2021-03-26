@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 :root {
-  --fontBlack: rgb(24, 24, 24);
-  --fontGray: rgb(97, 96, 96);
+  --fontBlack: #181818;
+  --fontGray: #616060;
   --colRed: #db2b39;
-  --colRed2: rgb(221, 52, 52);
+  --colRed2: #dd3434;
   --colViolet: #b91372;
   --colBlue: #998fc7;
   --colWhite: #f1f1f1;
