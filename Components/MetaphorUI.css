@@ -286,15 +286,15 @@
 button {
   outline: none;
 }
-.primary-btn {
+.btn-primary {
   background: var(--colRed);
   cursor: pointer;
 }
-.secondry-btn {
+.btn-secondry {
   background: var(--colViolet);
   cursor: pointer;
 }
-.disabled-btn {
+.btn-disabled {
   background: var(--colBlue);
   cursor: not-allowed;
 }
@@ -319,7 +319,7 @@ button {
   border-radius: 2px;
 }
 
-.floating-btn {
+.btn-floating {
   border: none;
   width: 2.5rem;
   height: 2.5rem;
@@ -331,7 +331,7 @@ button {
   font-size: 1.1rem;
   cursor: pointer;
 }
-.floating-btn:hover {
+.btn-floating:hover {
   transform: scale(1.1);
   transition: 0.2s;
 }
