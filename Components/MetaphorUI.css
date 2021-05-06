@@ -59,7 +59,9 @@
 .text-right {
   text-align: right;
 }
-
+.flex-cont {
+  display: flex;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
